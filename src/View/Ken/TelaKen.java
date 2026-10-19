@@ -4,7 +4,10 @@
  */
 package View.Ken;
 
+import Controlador.ControladorHabilidade;
+import Modelo.Habilidade;
 import javax.swing.JDesktopPane;
+import javax.swing.JList;
 
 /**
  *
@@ -12,12 +15,14 @@ import javax.swing.JDesktopPane;
  */
 public class TelaKen extends javax.swing.JPanel {
     JDesktopPane jDesktop2;
+    private JList<String> listaHabilidades;
     /**
      * Creates new form TelaKen
      */
-    public TelaKen(JDesktopPane jDesktop) {
+    public TelaKen(JDesktopPane jDesktop, JList<String> listaHabilidades) {
         initComponents();
         jDesktop2 = jDesktop;
+        JList = listaHabilidades;
     }
 
     /**
@@ -30,18 +35,48 @@ public class TelaKen extends javax.swing.JPanel {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jListHabilidades = new javax.swing.JList<>();
+        jButton2 = new javax.swing.JButton();
 
         jPanel1.setBackground(new java.awt.Color(204, 0, 51));
+
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Ken/shoryuken.png"))); // NOI18N
+        jButton1.setText("Botão");
+        jButton1.addActionListener(this::jButton1ActionPerformed);
+
+        jListHabilidades.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jScrollPane1.setViewportView(jListHabilidades);
+
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Ken/hadouken.png"))); // NOI18N
+        jButton2.setText("Botão");
+        jButton2.addActionListener(this::jButton2ActionPerformed);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 638, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 626, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 626, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(41, 41, 41)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 598, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 503, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(23, 23, 23)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 473, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(95, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -61,8 +96,36 @@ public class TelaKen extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+
+        Habilidade hadouken = new Habilidade(
+            "Hadouken",
+            "Especial",
+            "~25%"
+        );
+        c.trocarHabilidade(hadouken);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        Habilidade hadouken = new Habilidade(
+            "Hadouken",
+            "Especial",
+            "~25%"
+        );
+        c.trocarHabilidade(hadouken);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JList<String> jListHabilidades;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
+    ControladorHabilidade c;
+    public void inicio(){
+       c = new ControladorHabilidade(jListHabilidades);
+   }
 }

@@ -31,39 +31,86 @@ public class EscolherPersonagem extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
         jButtonRyu = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
         jButtonKen = new javax.swing.JButton();
+        jButtonRyu1 = new javax.swing.JButton();
+        jButtonCamm = new javax.swing.JButton();
+        jButtonRyu2 = new javax.swing.JButton();
+        jButtonRyu3 = new javax.swing.JButton();
+        jButtonRyu4 = new javax.swing.JButton();
+        jButtonRyu5 = new javax.swing.JButton();
+        jButtonRyu6 = new javax.swing.JButton();
 
-        jPanel1.setBackground(new java.awt.Color(51, 51, 51));
-
-        jButtonRyu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Ryu/Ryu.png"))); // NOI18N
-        jButtonRyu.setText("Ryu");
+        jButtonRyu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Ryu/ryu-pose (1).gif"))); // NOI18N
         jButtonRyu.addActionListener(this::jButtonRyuActionPerformed);
 
-        jButtonKen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Ken/ken.jpg"))); // NOI18N
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        jButtonKen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Ken/kengif.gif"))); // NOI18N
         jButtonKen.addActionListener(this::jButtonKenActionPerformed);
+
+        jButtonRyu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Chunli/chunli-jackiechan.gif"))); // NOI18N
+        jButtonRyu1.addActionListener(this::jButtonRyu1ActionPerformed);
+
+        jButtonCamm.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Honda/honda_portrait.gif"))); // NOI18N
+        jButtonCamm.addActionListener(this::jButtonCammActionPerformed);
+
+        jButtonRyu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Guile/guile_portrait.gif"))); // NOI18N
+        jButtonRyu2.addActionListener(this::jButtonRyu2ActionPerformed);
+
+        jButtonRyu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Zangief/image-asset.gif"))); // NOI18N
+        jButtonRyu3.addActionListener(this::jButtonRyu3ActionPerformed);
+
+        jButtonRyu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Dhalsim/PortaitDhalsim.png"))); // NOI18N
+        jButtonRyu4.addActionListener(this::jButtonRyu4ActionPerformed);
+
+        jButtonRyu5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Blanka/Portrait.blanka.png"))); // NOI18N
+        jButtonRyu5.addActionListener(this::jButtonRyu5ActionPerformed);
+
+        jButtonRyu6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Ryu/ryu-pose (1).gif"))); // NOI18N
+        jButtonRyu6.addActionListener(this::jButtonRyu6ActionPerformed);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jButtonKen, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jButtonRyu, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(525, Short.MAX_VALUE))
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButtonKen, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonRyu6, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                .addGap(26, 26, 26)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButtonCamm, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(jButtonRyu1, javax.swing.GroupLayout.PREFERRED_SIZE, 268, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButtonRyu2, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonRyu3, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButtonRyu4, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonRyu5, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(38, 38, 38))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButtonRyu, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jButtonKen, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(83, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButtonRyu6, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jButtonRyu2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButtonRyu1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButtonRyu4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addGap(13, 13, 13)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButtonKen, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonCamm, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(jButtonRyu3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(jButtonRyu5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -71,8 +118,8 @@ public class EscolherPersonagem extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -90,10 +137,45 @@ public class EscolherPersonagem extends javax.swing.JPanel {
         c.telaKen();        // TODO add your handling code here:
     }//GEN-LAST:event_jButtonKenActionPerformed
 
+    private void jButtonRyu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRyu1ActionPerformed
+        c.telaChunli();        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonRyu1ActionPerformed
+
+    private void jButtonCammActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCammActionPerformed
+        c.telaHonda();    // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonCammActionPerformed
+
+    private void jButtonRyu2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRyu2ActionPerformed
+        c.telaGuile();        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonRyu2ActionPerformed
+
+    private void jButtonRyu3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRyu3ActionPerformed
+        c.telaZangief();        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonRyu3ActionPerformed
+
+    private void jButtonRyu4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRyu4ActionPerformed
+        c.telaDhalsim();        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonRyu4ActionPerformed
+
+    private void jButtonRyu5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRyu5ActionPerformed
+        c.telaBlanka();        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonRyu5ActionPerformed
+
+    private void jButtonRyu6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRyu6ActionPerformed
+        c.telaRyu();        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonRyu6ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButtonCamm;
     private javax.swing.JButton jButtonKen;
     private javax.swing.JButton jButtonRyu;
+    private javax.swing.JButton jButtonRyu1;
+    private javax.swing.JButton jButtonRyu2;
+    private javax.swing.JButton jButtonRyu3;
+    private javax.swing.JButton jButtonRyu4;
+    private javax.swing.JButton jButtonRyu5;
+    private javax.swing.JButton jButtonRyu6;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
     ControladorTela c;
